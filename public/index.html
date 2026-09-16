@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dholak Pur Bank - Secure Digital Banking. Advanced security with multi-factor authentication, fraud detection, and encrypted transactions.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Dholak Pur Bank — Secure Digital Banking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Navigation - injected by JS -->
+    <nav id="main-nav" class="nav hidden">
+      <div class="nav-inner">
+        <a href="#/" class="nav-brand">
+          <img src="/logo.png" alt="Dholak Pur Bank Logo" class="brand-logo-img">
+          <span class="brand-text">DHOLAK PUR <span class="brand-accent">BANK</span></span>
+        </a>
+        <div class="nav-links" id="nav-links"></div>
+        <div class="nav-actions">
+          <span class="nav-user" id="nav-username"></span>
+          <button class="btn btn-ghost btn-sm" id="btn-logout" onclick="app.logout()">Logout</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content area -->
+    <main id="main-content">
+      <!-- Loading state -->
+      <div id="page-loader" class="loader-container">
+        <div class="loader-spinner"></div>
+        <p class="loader-text">Initializing secure connection...</p>
+      </div>
+    </main>
+
+    <!-- Toast notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- CSRF token (hidden) -->
+    <input type="hidden" id="csrf-token" value="">
+  </div>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/pages/login.js"></script>
+  <script src="/js/pages/signup.js"></script>
+  <script src="/js/pages/dashboard.js"></script>
+  <script src="/js/pages/transfer.js"></script>
+  <script src="/js/pages/beneficiaries.js"></script>
+  <script src="/js/pages/transactions.js"></script>
+  <script src="/js/pages/admin.js"></script>
+</body>
+</html>

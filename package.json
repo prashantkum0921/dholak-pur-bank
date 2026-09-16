@@ -1,0 +1,24 @@
+{
+    "name": "dholak-pur-bank",
+    "version": "1.0.0",
+    "description": "Secure Digital Banking Application - Dholak Pur Bank",
+    "main": "server.js",
+    "scripts": {
+        "dev": "node server.js",
+        "start": "node server.js",
+        "db:init": "node lib/db-init.js"
+    },
+    "dependencies": {
+        "@neondatabase/serverless": "^0.9.0",
+        "argon2": "^0.31.2",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.0",
+        "helmet": "^7.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "resend": "^6.9.2",
+        "svg-captcha": "^1.4.0",
+        "uuid": "^9.0.1"
+    }
+}
