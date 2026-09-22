@@ -16,6 +16,18 @@
             "destination": "/api/index.js"
         },
         {
+            "source": "/",
+            "destination": "/public/landing.html"
+        },
+        {
+            "source": "/landing",
+            "destination": "/public/landing.html"
+        },
+        {
+            "source": "/app",
+            "destination": "/public/index.html"
+        },
+        {
             "source": "/(.*)",
             "destination": "/public/$1"
         }
